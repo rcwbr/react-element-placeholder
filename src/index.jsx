@@ -1,12 +1,9 @@
 import LoadableImage from './components/LoadableImage/index.jsx'
 import Placeholder from './components/Placeholder/index.jsx'
-import ScaledImagePlaceholder from './components/ScaledImagePlaceholder/index.jsx'
-import ImagePlaceholder from './components/Placeholder/index.jsx'
-// import ImagePlaceholder from './components/ImagePlaceholder/index.jsx'
+import ScaledComponent from './components/ScaledComponent/index.jsx'
 
-module.exports = { // TODO alphabetical
+module.exports = {
 	LoadableImage,
 	Placeholder,
-	ScaledImagePlaceholder,
-	ImagePlaceholder
+	ScaledComponent
 }

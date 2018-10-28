@@ -1,5 +1,5 @@
 import React from 'react'
-import LoadableImage from '../LoadableImage/index.jsx' // TODO remove import
+// TODO add independent readme for Placeholder, ScaledComponent, and LoadableImage
 
 class Placeholder extends React.Component {
 	constructor (props) {
@@ -16,7 +16,7 @@ class Placeholder extends React.Component {
 	}
 	render () {
 		const PlaceholderType = this.props.placeholderType
-		const ModuleType = this.props.moduleType
+		const ComponentType = this.props.componentType
 		const placeholder = this.props.placeholderType ?
 			<PlaceholderType {...this.props.placeholderProps} />
 			: <div
@@ -39,8 +39,8 @@ class Placeholder extends React.Component {
 					{placeholder}
 				</div>
 				<div style={{ display: this.state.loaded ? 'block' : 'none' }} >
-					<ModuleType
-						{...this.props.moduleProps}
+					<ComponentType
+						{...this.props.componentProps}
 						loaded={this.loaded}
 					/>
 				</div>
