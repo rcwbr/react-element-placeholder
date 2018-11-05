@@ -1,5 +1,7 @@
 import React from 'react'
-// TODO add independent readme for Placeholder, ScaledComponent, and LoadableImage
+// TODO add independent readme for Placeholder, RingSpinner, ScaledComponent, and LoadableImage
+import RingSpinner from '../RingSpinner/index.jsx'
+import ScaledComponent from '../ScaledComponent/index.jsx'
 
 class Placeholder extends React.Component {
 	constructor (props) {
@@ -19,13 +21,20 @@ class Placeholder extends React.Component {
 		const ComponentType = this.props.componentType
 		const placeholder = this.props.placeholderType ?
 			<PlaceholderType {...this.props.placeholderProps} />
-			: <div
-				style={{
-					backgroundColor: 'green', // TODO add SVG placeholder as prop | load both placeholder and placeheld as props -- SVG to thumb to full image will be defined with two nested placeholder components
-					width: '100%',
-					height: '100%'
-				}}
-			/>
+			: (
+				<div
+					style={{
+						width: '100%',
+						height: '100%'
+					}}
+				>
+					<RingSpinner
+						circleRadius1={15}
+						circleRadius2={22}
+						strokeWidth={1.8}
+					/>
+				</div>
+			)
 
 		// TODO make placeholder null element when this.state.loaded is true
 		return (
