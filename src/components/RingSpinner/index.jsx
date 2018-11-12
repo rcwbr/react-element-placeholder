@@ -19,7 +19,7 @@ class RingSpinner extends React.Component {
 			: 0.9
 		const opacity2 = this.props.opacity2 ?
 		 	this.props.opacity2
-			: 0.4
+			: 0.3
 		const duration = this.props.duration ?
 		 	this.props.duration
 			: '1s'

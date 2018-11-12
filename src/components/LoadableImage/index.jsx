@@ -3,10 +3,15 @@ import React from 'react'
 class LoadableImage extends React.Component {
 	delay () {
 		setTimeout(() => {
-			this.props.loaded()
+			this.loaded()
 		}, 1000 + 10000 * Math.random())
 	}
+	componentWillUnmount() {
+		// do not call loaded after the placeholder has been removed -- applicable when placeholders are nested
+		this.loaded = () => {}
+	}
 	render () {
+		this.loaded = this.props.loaded
 		return (
 			<img
 				style={{

@@ -19,7 +19,7 @@ class Placeholder extends React.Component {
 	render () {
 		const PlaceholderType = this.props.placeholderType
 		const ComponentType = this.props.componentType
-		const placeholder = this.props.placeholderType ?
+		var placeholder = this.props.placeholderType ?
 			<PlaceholderType {...this.props.placeholderProps} />
 			: (
 				<div
@@ -35,8 +35,10 @@ class Placeholder extends React.Component {
 					/>
 				</div>
 			)
+		placeholder = this.state.loaded ?
+			undefined
+			: placeholder
 
-		// TODO make placeholder null element when this.state.loaded is true
 		return (
 			<div
 				style={{
@@ -44,9 +46,7 @@ class Placeholder extends React.Component {
 					height: this.props.height
 				}}
 			>
-				<div style={{ display: this.state.loaded ? 'none' : 'block' }} >
-					{placeholder}
-				</div>
+				{placeholder}
 				<div style={{ display: this.state.loaded ? 'block' : 'none' }} >
 					<ComponentType
 						{...this.props.componentProps}
