@@ -1,5 +1,5 @@
 {
-	"name": "react-image-placeholder",
+	"name": "react-element-placeholder",
 	"version": "0.1.0",
 	"description": "React component to display a SVG loading icon until an asynchronously-loaded image is ready to display",
 	"main": "build/index.js",
