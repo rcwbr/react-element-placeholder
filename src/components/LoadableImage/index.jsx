@@ -2,6 +2,7 @@ import React from 'react'
 
 class LoadableImage extends React.Component {
 	delay () {
+		// TODO: remove delay (used to simulate loading time in local environments)
 		setTimeout(() => {
 			this.loaded()
 		}, 1000 + 10000 * Math.random())
