@@ -1,11 +1,11 @@
 {
 	"name": "react-element-placeholder",
 	"version": "0.1.0",
-	"description": "React component to display a placeholder until an asynchronously-loaded element is ready to display",
+	"description": "The `react-element-placeholder` package defines a React component to display a placeholder until an asynchronously-loaded element is ready to display.",
 	"main": "build/index.js",
 	"scripts": {
-		"start": "npm link react-ring-spinner && npm link && webpack --watch",
-		"build": "npm link react-ring-spinner && webpack && npm link"
+		"start": "npm link && webpack --watch",
+		"build": "webpack && npm link"
 	},
 	"repository": {
 		"type": "git",
@@ -19,7 +19,7 @@
 	"homepage": "https://github.com/rcieoktgieke/react-element-placeholder#readme",
 	"dependencies": {
 		"react": "^16.4.1",
-		"react-ring-spinner": "file:../react-ring-spinner"
+		"react-ring-spinner": "^0.1.2"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
