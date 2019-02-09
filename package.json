@@ -9,14 +9,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/rcieoktgieke/react-element-placeholder.git"
+		"url": "git+https://github.com/rcwbr/react-element-placeholder.git"
 	},
 	"author": "Eric Weber",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/rcieoktgieke/react-element-placeholder/issues"
+		"url": "https://github.com/rcwbr/react-element-placeholder/issues"
 	},
-	"homepage": "https://github.com/rcieoktgieke/react-element-placeholder#readme",
+	"homepage": "https://github.com/rcwbr/react-element-placeholder#readme",
 	"dependencies": {
 		"react": "^16.4.1",
 		"react-ring-spinner": "^0.1.2"
