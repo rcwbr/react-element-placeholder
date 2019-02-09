@@ -27,7 +27,7 @@ TODO: add install instructions after NPM publish
 
 ## Maintainers
 
-[@rcieoktgieke](https://github.com/rcieoktgieke)
+[@rcwbr](https://github.com/rcwbr)
 
 ## Contribute
 
