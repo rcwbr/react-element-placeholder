@@ -1,5 +1,4 @@
 import React from 'react'
-// TODO add independent readme for Placeholder, RingSpinner, ScaledComponent, and LoadableImage
 import RingSpinner from 'react-ring-spinner'
 import ScaledComponent from '../ScaledComponent/index.jsx'
 
