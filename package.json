@@ -1,36 +1,38 @@
 {
-	"name": "react-element-placeholder",
-	"version": "0.1.0",
-	"description": "The `react-element-placeholder` package defines a React component to display a placeholder until an asynchronously-loaded element is ready to display.",
-	"main": "build/index.js",
-	"scripts": {
-		"start": "npm link && webpack --watch",
-		"build": "webpack && npm link"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/rcwbr/react-element-placeholder.git"
-	},
-	"author": "Eric Weber",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/rcwbr/react-element-placeholder/issues"
-	},
-	"homepage": "https://github.com/rcwbr/react-element-placeholder#readme",
-	"dependencies": {
-		"react": "^16.4.1",
-		"react-ring-spinner": "^0.1.2"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.2.2",
-		"@babel/preset-env": "^7.2.3",
-		"@babel/preset-react": "^7.0.0",
-		"babel-loader": "^8.0.5",
-		"standard": "^11.0.0",
-		"webpack": "^4.15.1",
-		"webpack-cli": "^3.0.8"
-	},
-	"standard": {
-		"parser": "babel-eslint"
-	}
+  "name": "react-element-placeholder",
+  "version": "0.1.0",
+  "description": "A React component to display a placeholder until an asynchronously-loaded element is ready to display.",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "npm link && webpack --watch",
+    "build": "webpack && npm link"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcwbr/react-element-placeholder.git"
+  },
+  "author": "Eric Weber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rcwbr/react-element-placeholder/issues"
+  },
+  "homepage": "https://github.com/rcwbr/react-element-placeholder#readme",
+  "dependencies": {
+    "react-ring-spinner": "^0.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "standard": "^11.0.0",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
 }
